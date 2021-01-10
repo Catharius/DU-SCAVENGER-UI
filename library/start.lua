@@ -1,3 +1,7 @@
+bookmark_visited_distance = 1000 --export: Distance in meter, if a bookmark is closer than this it will be shown as visited area
+bookmark_visited_color = "0FFF67" --export: Bookmark color when the bookmark is in range
+bookmark_notvisited_color = "bf5f00" --export: Bookmark color when the bookmark is not in range
+
 --[[
     Jericho's time script -- https://github.com/Jericho1060
     Display IRL date and time in game
