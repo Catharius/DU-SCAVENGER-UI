@@ -1,0 +1,1 @@
+-- Copy paste here the exported commands and type restoreddb in the lua console
