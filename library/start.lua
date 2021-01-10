@@ -125,3 +125,17 @@ end
 function round(num, numDecimalPlaces)
     return tonumber(string.format("%." .. (numDecimalPlaces or 0) .. "f", num))
 end
+
+
+databank = nil
+screen = nil
+function sortSlot(slot)
+    if slot ~= nil then
+        if string.match(slot.getElementClass(), "DataBankUnit") then    
+            databank = slot
+        elseif string.match(slot.getElementClass(), "ScreenUnit") then    
+            screen = slot
+        end   
+    end
+
+end
