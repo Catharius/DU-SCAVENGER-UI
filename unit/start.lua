@@ -1,5 +1,5 @@
 -- Add this at the end of the unit start
-unit.setTimer("showzone",1)
+unit.setTimer("showzone", 1)
 -- Init slots
 sortSlot(slot1)
 sortSlot(slot2)
