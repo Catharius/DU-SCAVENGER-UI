@@ -34,13 +34,13 @@ The goal of the script is to tell you if you have been to a place or not
 
 * **ALT+2 (Option2)** : Create a new bookmark on your position
 
-* LUA COMMANDS : Type them in the lua console to activate functions
+* **LUA COMMANDS** : Type them in the lua console to activate functions
 
-exportdb : Require to plug a screen to your seat, type exportdb into the lua console to export the databank content, then right click on the screen, edit HTML and copy paste the content
+**exportdb** : Require to plug a screen to your seat, type exportdb into the lua console to export the databank content, then right click on the screen, edit HTML and copy paste the content
 
-restoredb : Before typing this command, copy the exported data into the lua in system / inputText(restoredb). It will then import all the saved data into the databank. Please note that the data already in the databank will be left untouched.
+**restoredb** : Before typing this command, copy the exported data into the lua in system / inputText(restoredb). It will then import all the saved data into the databank. Please note that the data already in the databank will be left untouched.
 
-resetdb : Will clear the databank of all records
+**resetdb** : Will clear the databank of all records
 
 
 ### List of lua parameters
