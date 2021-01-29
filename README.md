@@ -1,7 +1,10 @@
 # DU-SCAVENGER-UI
 
-The scavenger UI is dedicated to exploration, radar scanning and salvage operations. 
+The scavenger UI is dedicated to exploration, precise radar zone scanning and salvage operations. 
 ![image](https://raw.githubusercontent.com/Catharius/DU-SCAVENGER-UI/main/hud.jpg?token=ARIPOLEXBVDDYHCKPJSYEQDACR5IU)
+
+If you want to support me you can visit my museum in surrogate (search for "Salvage Museum") and make a small donation at the dispenser. All the ships you will see at the museum have been salvaged with the help of this script.
+
 
 ## What it does :
 * It can save up to 350 bookmarks
