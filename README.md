@@ -14,6 +14,7 @@ If you want to support me you can visit my museum in surrogate (search for "Salv
 * It will also allow you to fly in a straight line to the angle you specify in the lua parameters (0 North, 90 East, 180 South, 270 WEST) using alt+1 to stabilize your ship (You can relax and control the pitch, the rest will be taken care of)
 
 ## Requirements
+* A databank linked to you seat
 * You will need planetref.lua and atlas.lua from JayleBreak, you can download them at https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
 
 Copy paste these files into your DU directory into \Dual Universe\Game\data\lua\cpml and you are good to go
