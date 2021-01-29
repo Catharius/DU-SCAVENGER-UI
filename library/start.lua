@@ -64,31 +64,31 @@ function getHeading(forward)
 end
 
 function computeBookmarkAge(bookmarkkey)
-    local age = (system.getTime()-bookmarkkey)
-    -- DAYS (86 400 seconds are one day)
-    local days = age // 86400
-    -- Modulus to get hours lefts
-    age = age % 86400
-    -- HOURS (3600 seconds are one hour)
-    local hours = age // 3600
-    -- Modulus again to get minutes lefts
-    age = age % 3600
-    -- MINUTES (60 seconds are 1 minute) 
-    local minutes = age // 60
-    -- Modulus again to get minutes lefts
-    age = age % 60
-    local seconds = age
-
-
-    if days > 0 then
-        formated_time = tonumber(string.format("%."..(0).."f",days)).."d:"..tonumber(string.format("%."..(0).."f",hours)).."h:"..tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"  
-    elseif hours>0 then
-        formated_time = tonumber(string.format("%."..(0).."f",hours)).."h:"..tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"         
-    elseif minutes>0 then
-        formated_time = tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"            
-    elseif seconds>0 then
-        formated_time = tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"                
-    end        	 
-    
+    local formated_time=""
+    if bookmarkkey then
+        local age = (system.getTime()-bookmarkkey)
+        -- DAYS (86 400 seconds are one day)
+        local days = age // 86400
+        -- Modulus to get hours lefts
+        age = age % 86400
+        -- HOURS (3600 seconds are one hour)
+        local hours = age // 3600
+        -- Modulus again to get minutes lefts
+        age = age % 3600
+        -- MINUTES (60 seconds are 1 minute) 
+        local minutes = age // 60
+        -- Modulus again to get minutes lefts
+        age = age % 60
+        local seconds = age
+        if days > 0 then
+            formated_time = tonumber(string.format("%."..(0).."f",days)).."d:"..tonumber(string.format("%."..(0).."f",hours)).."h:"..tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"  
+        elseif hours>0 then
+            formated_time = tonumber(string.format("%."..(0).."f",hours)).."h:"..tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"         
+        elseif minutes>0 then
+            formated_time = tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"            
+        elseif seconds>0 then
+            formated_time = tonumber(string.format("%."..(0).."f",minutes)).."m:"..tonumber(string.format("%."..(0).."f", seconds)).."s"                
+        end        	 
+    end
     return formated_time
 end
