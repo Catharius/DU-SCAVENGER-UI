@@ -42,6 +42,15 @@ The goal of the script is to tell you if you have been to a place or not
 
 **resetdb** : Will clear the databank of all records
 
+## Pro tips for planet salvaging
+* Start by putting a bookmark
+* While on the bookmark, turn your ship east (set the lua parameter ship_align_angle to 90°)
+* Press alt+1 to lock the ship in this direction and start the engines (You can control the pitch of the ship to gain altitude or lower your altitude)
+* if you see something of interest, press alt+2 to put another bookmark then go to what you have seen.
+* To get back to your initial trajectory, go back to the bookmark, head east again and repeat
+* When you have made a full turn of the planet you will see the old bookmark that you made when you started. Go to it then head south or north and stop when you are 7-8 km away from it.
+* Put a new bookmark.. rinse and repeat !
+
 
 ### List of lua parameters
 * **ship_align_angle** : The angle that you want the ship to go
