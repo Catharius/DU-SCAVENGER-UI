@@ -8,8 +8,7 @@ else
         local data = databank.getStringValue(key)
         data = split(data, "|")
         html = html .. [[databank.setStringValue("]] .. key .. [[","]] ..
-                   data[1] .. [[|]] .. data[2] .. [[|]] .. data[3] .. [[|]] ..
-                   data[4] .. [[")]] .. "\r\n"
+                   data[1] .. [[|]] .. data[2] .. [[|]] .. data[3] .. [[")]] .. "\r\n"
     end
     screen.activate()
     screen.setHTML(html)
