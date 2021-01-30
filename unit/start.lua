@@ -10,19 +10,12 @@ currentBookmark = nil
 current_planet_id = 2
 current_planet = helios[current_planet_id] -- See atlas for ref
 
-unit.setTimer("showzone",0.25)
+databank = nil
+screen = nil
 -- Init slots
-sortSlot(slot1)
-sortSlot(slot2)
-sortSlot(slot3)
-sortSlot(slot4)
-sortSlot(slot5)
-sortSlot(slot6)
-sortSlot(slot7)
-sortSlot(slot8)
-sortSlot(slot9)
-sortSlot(slot10)
+sortSlot()
 -- Init state
+unit.setTimer("showzone",0.25)
 stabilizeShip=false
 -- Visuals 
 core.hide()

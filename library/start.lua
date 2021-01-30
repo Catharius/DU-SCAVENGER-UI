@@ -5,8 +5,6 @@ bookmark_in_range_color = "0FFF67" --export: Bookmark color when the bookmark is
 bookmark_outof_range_color = "bf5f00" --export: Bookmark color when the bookmark is not in range
 alignment_precision = 0.3 --export: Number in degrees, for example if your chosen angle is 90° the autopilot will stop aligning between 90-theprecision and 90+theprecision
 alignment_strength = 2 --export: Force applied to align, tweak this with caution, if too big it will make your ship spin
-databank = nil
-screen = nil
 
 -- Functions
 function split(s, delimiter)
@@ -37,15 +35,18 @@ function round(num, numDecimalPlaces)
     return tonumber(string.format("%." .. (numDecimalPlaces or 0) .. "f", num))
 end
 
-function sortSlot(slot)
-    if slot ~= nil then
-        if string.match(slot.getElementClass(), "DataBankUnit") then    
-            databank = slot
-        elseif string.match(slot.getElementClass(), "ScreenUnit") then    
-            screen = slot
-        end   
+function sortSlot()
+    for key, slot in pairs(unit) do
+        if type(slot) == "table" and type(slot.export) == "table" then
+            if slot.getElementIdList then
+                core = slot
+            elseif slot.setHTML then
+                screen = slot
+            elseif slot.getKeys then    
+                databank = slot    
+            end
+        end
     end
-
 end
 
 -- code provided by tomisunlucky
