@@ -67,3 +67,7 @@ The goal of the script is to tell you if you have been to a place or not
 
 ### Disclaimer
 This script is in beta and have been tested on a small XS ship, using it on a bigger ship will require testing and tweaking of the lua parameters
+
+### Credits
+Dimencia https://github.com/Dimencia/DU-Orbital-Hud
+JayleBreak https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
