@@ -26,6 +26,9 @@ This script will let you store where your ship is currently located and will als
 
 When piloting, the script will look every seconds where is the nearest bookmark and will show it on your HUD by using a setWaypoint command (setDestination). The HUD will also show you the age of the bookmark.
 
+Using ALT+1(option1) when aligned  in the green zone will maintain altitude and keep the ship pointing toward the chosen azimuth.
+
+**Warning : Before using ALT+1, be sure to be at an altitude of 1000m or deactivate the maintain altitude parameter
 
 ## How to use this script
 
@@ -37,7 +40,7 @@ The goal of the script is to tell you if you have been to a place or not
 
 * **LUA COMMANDS** : Type them in the lua console to activate functions
 
-**exportdb** : Require to plug a screen to your seat, type exportdb into the lua console to export the databank content, then right click on the screen, edit HTML and copy paste the content
+**exportdb** : Require to link a screen to your seat, type exportdb into the lua console to export the databank content, then right click on the screen, edit HTML and copy paste the content
 
 **restoredb** : Before typing this command, copy the exported data into the lua in system / inputText(restoredb). It will then import all the saved data into the databank. Please note that the data already in the databank will be left untouched.
 
@@ -54,16 +57,16 @@ The goal of the script is to tell you if you have been to a place or not
 
 
 ### List of lua parameters
-* **ship_align_angle** : The angle that you want the ship to go
+* **ship_align_angle** : The azimuth angle that you want the ship to maintain
 * **bookmark_range_alert_distance** : Distance in meter, if a bookmark is closer than this it will be shown with the "in range" color 
 * **bookmark_in_range_color** : Bookmark color when the bookmark is in range
 * **bookmark_outof_range_color** : Bookmark color when the bookmark is not in range
 * **alignment_precision** : Number in degrees, for example if your chosen angle is 90° the autopilot will stop aligning between 90-theprecision and 90+theprecision
 * **alignment_strength** : Force applied to align, tweak this with caution, if too big it will make your ship spin
+* **maintain_altitude** : On by default, maintain altitude when you have pressed ALT+1 (Option1)
 
 ### My todo list for the future
 * Add a function to stop the bookmark setDestination function if we want to set our own bookmark
-* Make an autoconf
 
 ### Disclaimer
 This script is in beta and have been tested on a small XS ship, using it on a bigger ship will require testing and tweaking of the lua parameters

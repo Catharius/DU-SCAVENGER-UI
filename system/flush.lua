@@ -1,3 +1,11 @@
+-- FoolsFolly autopitch (Put this code between Axis and rotation)
+if stabilizeShip==true and maintain_altitude==true then
+    local currentPitchDeg = math.max(math.min(getRoll(worldVertical, constructRight, -constructForward)/60, 1), -1) -- Angle of construct's current pitch, expressed as a value between -1 and 1, up to 60 degrees
+    local heightDiff = math.max(math.min((TargetAltitude - core.getAltitude())/1000, 1), -1) -- Difference between current and target altitude; values expressed between -1 and 1, up to 1000m
+    local verticalSpeed = vec3(core.getWorldVelocity()):dot(-vec3(core.getWorldVertical()))*3.6/2500 -- Speed moving up/down, in km/h, divided by 1000
+    finalPitchInput = (heightDiff - currentPitchDeg) - verticalSpeed -- Increase pitch relative to needed altitude change, decrease relative to current pitch, decrease relative to current vertical speed
+end
+
 -- Find this code near line 47
 -- Rotation
 local constructAngularVelocity = vec3(core.getWorldAngularVelocity())

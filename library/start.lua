@@ -5,6 +5,7 @@ bookmark_in_range_color = "0FFF67" --export: Bookmark color when the bookmark is
 bookmark_outof_range_color = "bf5f00" --export: Bookmark color when the bookmark is not in range
 alignment_precision = 0.3 --export: Number in degrees, for example if your chosen angle is 90° the autopilot will stop aligning between 90-theprecision and 90+theprecision
 alignment_strength = 2 --export: Force applied to align, tweak this with caution, if too big it will make your ship spin
+maintain_altitude = true --export: Maintain altitude or no
 
 -- Functions
 function split(s, delimiter)
