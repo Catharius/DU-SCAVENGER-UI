@@ -73,4 +73,7 @@ This script is in beta and have been tested on a small XS ship, using it on a bi
 
 ### Credits
 Dimencia https://github.com/Dimencia/DU-Orbital-Hud
+
 JayleBreak https://gitlab.com/JayleBreak/dualuniverse/-/tree/master/DUflightfiles/autoconf/custom
+
+FoolsFolly https://github.com/FoolsFolly/DU-Auto-Pitch
