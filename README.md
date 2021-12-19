@@ -1,5 +1,7 @@
 # DU-SCAVENGER-UI
 
+WARNING : This script is now deprecated and will not work with the current version of Dual Universe.
+
 The scavenger UI is dedicated to exploration, precise radar zone scanning and salvage operations. 
 ![image](https://raw.githubusercontent.com/Catharius/DU-SCAVENGER-UI/main/hud.jpg?token=ARIPOLEXBVDDYHCKPJSYEQDACR5IU)
 
