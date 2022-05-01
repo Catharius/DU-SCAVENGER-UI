@@ -2,8 +2,8 @@
 --Init
 vec3  = require('cpml.vec3')
 utils = require('cpml.utils')
-planetRef = require('cpml.planetref')
-referenceTableSource = require('cpml.atlas')
+planetRef = require('planetref')
+referenceTableSource = require('atlas')
 galaxyReference = planetRef(referenceTableSource)
 helios = galaxyReference[0]
 currentBookmark = nil
